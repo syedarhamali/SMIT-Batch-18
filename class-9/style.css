@@ -1,0 +1,59 @@
+/* p{
+   color: red;
+}
+li > a{
+   color: green;
+}
+div span{
+   font-weight: bold;
+} */
+body {
+   font-family: monospace;
+   border: 2px solid black;
+}
+
+p {
+   color: red;
+   border: inherit;
+   /* color: inherit; */
+}
+p {
+   color: blue !important;
+}
+
+#p3 {
+   color: green;
+   font-family: sans-serif;
+}
+
+p {
+   color: rgb(37, 37, 37) !important;
+}
+
+.text-bold {
+   font-weight: bold;
+}
+
+.underline-text {
+   text-decoration: underline;
+}
+
+#div1 {
+   height: 100px;
+   width: 100px;
+   /* background-color: rgb(201, 160 , 130 ) ; */
+   background-color: #211ed6;
+}
+
+#div2 {
+   height: 100px;
+   width: 100px;
+   background-color: rgba(0, 0, 0, 0.633);
+}
+
+#div3 {
+   height: 100px;
+   width: 100px;
+   background-color: rgb(255, 0, 0);
+   opacity: 0.5;
+}

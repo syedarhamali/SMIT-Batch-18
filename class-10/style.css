@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+#header-menu{
+    color: rgb(red, green, blue , );
+    opacity: 1;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: capitalize;
+    word-spacing: 20px;
+    /* letter-spacing: 20px;     */
+    /* text-decoration: line-through; */
+}
+
+.no-underline{
+    font-size: 100px;
+    text-decoration: none;
+}
+h1{
+    text-align: left;
+}
