@@ -1,0 +1,37 @@
+/* .parent{
+    border: 1px solid black;
+    height: 500px;
+    width: 50%;
+    background-color: blue;
+}
+
+.child{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.child h1{
+    margin: 0px;
+} */
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: red; */
+    border: 2px solid black;
+    border-radius: 50%;
+    /* charo taraf */
+    /* padding: 10px; */
+    /* phli value top or bottom k lea dosri value left or right k lea  */
+    padding: 10px 40px 100px 0px;
+
+    margin: 50px 0px 0px 0px;
+}
+
+.box p{
+    margin: 0px;
+}
