@@ -1,0 +1,127 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fixed Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4b2c20;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 10;
+}
+
+.header .menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.header .menu a:hover {
+  text-decoration: underline;
+}
+
+/* Add some space below header */
+.content {
+  padding-top: 100px;
+  background-color: #faf4ef;
+  min-height: 200vh; /* For scrolling */
+}
+
+/* Intro section */
+.intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Profile Card (Relative + Absolute) */
+.profile-card {
+  position: relative;
+  width: 250px;
+  background-color: white;
+  margin: 0 auto 80px auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.profile-card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Absolute positioned status dot */
+.status-dot {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  background-color: limegreen;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* Article Section (Relative) */
+.article {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Absolute badge inside article */
+.badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: crimson;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Fixed "Back to Top" button */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #4b2c20;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.back-to-top:hover {
+  background-color: #643825;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4b2c20;
+  color: white;
+}
