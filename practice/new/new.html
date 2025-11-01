@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Properties in CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f4f2;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #5a3e2b;
+    }
+
+    section {
+      margin: 30px 0;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    img {
+      display: block;
+      margin: 10px auto;
+    }
+
+    /* 1. Width & Height */
+    .img1 {
+      width: 200px;
+      height: 150px;
+      border: 2px solid #5a3e2b;
+    }
+
+    /* 2. Object-fit */
+    .img2 {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* 3. Object-position */
+    .img3 {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: top center;
+      border: 2px solid #444;
+      border-radius: 10px;
+    }
+
+    /* 4. Filter */
+    .img4 {
+      width: 200px;
+      filter: grayscale(80%);
+      transition: 0.3s;
+    }
+    .img4:hover {
+      filter: none;
+    }
+
+    /* 5. Border-radius */
+    .img5 {
+      width: 150px;
+      border-radius: 50%;
+      border: 3px solid #5a3e2b;
+    }
+
+    /* 6. Box-shadow */
+    .img6 {
+      width: 250px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border-radius: 8px;
+    }
+
+    /* 7. Opacity */
+    .img7 {
+      width: 200px;
+      opacity: 0.7;
+      transition: 0.3s;
+    }
+    .img7:hover {
+      opacity: 1;
+    }
+
+    /* 8. Float */
+    .float-example {
+      overflow: auto;
+    }
+    .img8 {
+      float: left;
+      width: 150px;
+      margin-right: 15px;
+      border-radius: 10px;
+    }
+
+    /* 9. Background Image */
+    .bg-example {
+      height: 200px;
+      background-image: url('https://picsum.photos/600/300');
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* 10. Image Rendering */
+    .img9 {
+      width: 200px;
+      image-rendering: pixelated;
+      border: 2px solid #000;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>🖼️ Image Properties in CSS</h1>
+
+  <section>
+    <h2>1. Width and Height</h2>
+    <img src="https://t4.ftcdn.net/jpg/13/26/34/17/360_F_1326341728_2qtb9sV6KuP7dgSs32MbUb9Y0HiFSRPO.jpg" alt="Example" class="img1">
+  </section>
+
+  <section>
+    <h2>2. Object-fit</h2>
+    <img src="https://t4.ftcdn.net/jpg/13/26/34/17/360_F_1326341728_2qtb9sV6KuP7dgSs32MbUb9Y0HiFSRPO.jpg" alt="Example" class="img2">
+  </section>
+
+  <section>
+    <h2>3. Object-position</h2>
+    <img src="https://t4.ftcdn.net/jpg/13/26/34/17/360_F_1326341728_2qtb9sV6KuP7dgSs32MbUb9Y0HiFSRPO.jpg" alt="Example" class="img3">
+  </section>
+
+  <section>
+    <h2>4. Filter (Grayscale)</h2>
+    <img src="https://t4.ftcdn.net/jpg/13/26/34/17/360_F_1326341728_2qtb9sV6KuP7dgSs32MbUb9Y0HiFSRPO.jpg" alt="Example" class="img4">
+  </section>
+
+  <section>
+    <h2>5. Border-radius (Circle Image)</h2>
+    <img src="https://t4.ftcdn.net/jpg/13/26/34/17/360_F_1326341728_2qtb9sV6KuP7dgSs32MbUb9Y0HiFSRPO.jpg" alt="Example" class="img5">
+  </section>
+
+  <section>
+    <h2>6. Box-shadow</h2>
+    <img src="https://t4.ftcdn.net/jpg/13/26/34/17/360_F_1326341728_2qtb9sV6KuP7dgSs32MbUb9Y0HiFSRPO.jpg" alt="Example" class="img6">
+  </section>
+
+  <section>
+    <h2>7. Opacity (Hover to see effect)</h2>
+    <img src="https://t4.ftcdn.net/jpg/13/26/34/17/360_F_1326341728_2qtb9sV6KuP7dgSs32MbUb9Y0HiFSRPO.jpg" alt="Example" class="img7">
+  </section>
+
+  <section class="float-example">
+    <h2>8. Float (Text Wrap)</h2>
+    <img src="https://t4.ftcdn.net/jpg/13/26/34/17/360_F_1326341728_2qtb9sV6KuP7dgSs32MbUb9Y0HiFSRPO.jpg" alt="Example" class="img8">
+    <p>
+      This text wraps around the image using the <code>float</code> property. It’s often used in blogs or news layouts 
+      where images are aligned beside paragraphs. Notice how the text flows nicely around the image.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Background Image</h2>
+    <div class="bg-example">Background Image Section</div>
+  </section>
+
+  <section>
+    <h2>10. Image Rendering (Pixelated)</h2>
+    <img src="https://t4.ftcdn.net/jpg/13/26/34/17/360_F_1326341728_2qtb9sV6KuP7dgSs32MbUb9Y0HiFSRPO.jpg" alt="Pixel Art" class="img9">
+  </section>
+
+</body>
+</html>
