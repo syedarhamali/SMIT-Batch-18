@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: black;
+    padding: 0px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+.tabs{
+    display: flex;
+    gap: 30px;
+}
+
+.tabs a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header-button{
+    color: white;
+    background-color: #151515;  
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 1px solid #292929;
+    border-radius: 10px;
+}
