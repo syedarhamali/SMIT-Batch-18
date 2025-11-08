@@ -1,0 +1,15 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 50px;
+}
+
+
+
+.card {
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
