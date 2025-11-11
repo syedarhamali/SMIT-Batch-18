@@ -1,0 +1,33 @@
+:root{
+    --theme-light : blue;
+    --theme-dark : black;
+    --text-white: white;
+}
+
+.first-section{
+    background-color: var(--theme);
+    color: var(--text-white);
+}
+
+.second-section{
+    background-color: var(--theme);
+    color: white;
+}
+
+.third-section{
+    background-color: var(--theme);
+    color: var(--text-white);
+}
+.forth-section{
+    background-color: var(--theme);
+    color: var(--text-white);
+}
+.fifth-section{
+    background-color: var(--theme);
+    color: var(--text-white);
+}
+
+.sixth-section{
+    background-color: var(--theme);
+    color: white;
+}
