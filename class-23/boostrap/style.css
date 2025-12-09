@@ -1,0 +1,54 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    margin: 20px 0;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+.carousel-item{
+    display: flex;
+    justify-content: center !important;
+    flex-direction: row;
+}
+.carousel-item> img{
+}
+
+.carousel-control-prev{
+    background-color: aqua;
+}
+
+.carousel{
+    width: 70%;
+    height: 100%;
+}
+
+.carousel-inner{
+    height: 100%;
+    
+}
+
+.c-parent{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.container-fluid{
+    margin: 0 !important;
+    padding: 0 !important;
+    height:500px;
+    background-color: red;
+}
+
+.container-lg{
+    background-color: rgb(177, 255, 153);
+
+}

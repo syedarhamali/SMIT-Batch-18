@@ -1,0 +1,72 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main{
+    height: 100vh;
+    background-color: bisque;
+}
+
+.box{
+    height: 150px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+
+.container-fluid{
+    margin: 50px 0;
+    background-color: rgba(255, 66, 66, 0.561);
+}
+
+.col-br{
+    border: 1px solid black;
+}
+
+
+.my-card{
+    border: 1px solid black;
+    height: 150px;
+    background-color: bisque;
+}
+
+.my-card img{
+    width: 100%;
+    height: 80px;
+}
+
+.card-container{
+    /* height: 900px; */
+}
+
+nav{
+    height: 80px;
+    background-color: rgb(95, 111, 125);
+}
+
+.logo{
+    background-color: antiquewhite;
+}
+.list{
+    background-color: rgb(215, 255, 135);
+}
+
+.input-box{
+    background-color: rgb(135, 255, 225);
+}
+nav > .row{
+    height: 100%;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+.col-6 .row{
+}

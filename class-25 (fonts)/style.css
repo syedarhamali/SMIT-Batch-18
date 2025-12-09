@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+p{
+     /* font-family: "Bebas Neue", sans-serif; */
+}
+
+span{
+    font-family: "Science Gothic", sans-serif;
+}
+
+#fb-icon{
+    color: blue;
+}
+
+
+.box-parent{
+    background-color: rgb(255, 121, 121);
+    height: 250px;
+    
+}
+.box{
+    height: 150px;
+    width: 150px;
+    border:  1px solid black;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .box{
+        background-color: aqua;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .box-parent{
+        background-color: rgb(193, 255, 122);
+    }
+}
+
+@media screen and (max-width:1000px ) and (min-width:600px) {
+    .box-parent{
+        border: 6px solid red;
+    }
+    .box-2{
+        display: none;
+    }
+}
+
