@@ -42,13 +42,12 @@ var products = [
     { productName: 'Airpods Apple', productPrice: 500, productDiscPercent: 40, productImage: 'https://img.drz.lazcdn.com/static/pk/p/e65cd132a61f03fed20a68d6b878fb5c.png_200x200q80.png_.avif' },
     { productName: 'Macbook', productPrice: 1500, productDiscPercent: 30, productImage: 'https://img.drz.lazcdn.com/static/pk/p/e65cd132a61f03fed20a68d6b878fb5c.png_200x200q80.png_.avif' },
     { productName: 'New Data', productPrice: 2500, productDiscPercent: 50, productImage: 'https://img.drz.lazcdn.com/static/pk/p/e65cd132a61f03fed20a68d6b878fb5c.png_200x200q80.png_.avif' },
-
 ]
 
 function showCards() {
     var cardsContainer = document.getElementById("cards")
     for (var i = 0; i < products.length; i++) {
-        var {productImage , productName , productPrice , productDiscPercent} = products[i]
+        var { productImage, productName, productPrice, productDiscPercent } = products[i]
         cardsContainer.innerHTML += `
         <article class="card">
             <div class="card__img">
