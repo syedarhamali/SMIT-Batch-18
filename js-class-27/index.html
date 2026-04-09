@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Class contructor</h1>
+
+    <form onsubmit="handleSubmit(event)" >
+        <input type="text" placeholder="Enter product Name" id="productName">
+        <input type="number" placeholder="Enter product Quantity" id="quantity">
+        <input type="text" placeholder="Enter product Category" id="category">
+        <input type="number" placeholder="Enter product price" id="price">
+        <input type="date"  placeholder="Enter expiry date" id="expiryDate">
+        <input type="submit" value="Submit">
+    </form>
+
+    <button onclick="handleDiscount()">Check Product Discount</button>
+    <script src="index.js"></script>
+</body>
+
+</html>
