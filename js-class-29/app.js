@@ -29,16 +29,14 @@ const users = [{
 
 
 },
-{
+{     
     name:'Wahaj',
     age: 18,
     nationality: 'Pakistani',
     email: 'wahaj@gmail.com',
     password: '12345'
 
-}
-]
-
+}   ]
 
 
 
