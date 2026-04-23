@@ -41,6 +41,13 @@ function renderProductCard(products) {
     const container = document.getElementById("product-container");
 
     container.innerHTML = ''
+
+    products.map((element) =>{
+        console.log(element.title + 1)
+    })
+
+
+
     for (var i = 0; i <= products.length; i++) {
         const { thumbnail, title, description, price, rating, discountPercentage , stock } = products[i]
         const discountedPrice = price - (price * discountPercentage / 100);
