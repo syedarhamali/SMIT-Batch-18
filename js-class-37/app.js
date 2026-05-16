@@ -50,7 +50,7 @@
 //     bank: 'Meezan'
 // }
 
-// // Call 
+// // Call (ik jaga ap ny environment se value uthany ka bola dosri jaga apny parameter se value uthany ka bola)
 // function getDetail(city , country){
 
 //     console.log(this.balance)
