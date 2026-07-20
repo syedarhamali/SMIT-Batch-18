@@ -1,8 +1,9 @@
 import { createUserWithEmailAndPassword , signInWithEmailAndPassword , onAuthStateChanged , signOut } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-auth.js";
 import { auth } from "./firebaseconfig.js";
+import { addDocToFirestore } from "./firestore.js";
 
 
-function signup (email , password){
+function signup (email , password , firstName , lastName , age){
   
 createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
@@ -10,7 +11,7 @@ createUserWithEmailAndPassword(auth, email, password)
     const user = userCredential.user;
     console.log(user);
     console.log("User signed up successfully");
-    window.location.href= "dashboard.html"
+    addDocToFirestore(user.uid , {firstName , lastName , age})
     // ...
   })
   .catch((error) => {
