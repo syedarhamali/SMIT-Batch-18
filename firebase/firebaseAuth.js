@@ -39,12 +39,13 @@ function signIn(email, password){
     });
 }
 
-function getLoginUser(){
+function getLoginUser(callback){
   onAuthStateChanged(auth, (user) => {
     if (user) {
       console.log("user jo login he " , user)
       const uid = user.uid;
       console.log("user id is ", uid)
+      callback(user)
       // ...
     } else {
       console.log("user mojood nhi he ")
